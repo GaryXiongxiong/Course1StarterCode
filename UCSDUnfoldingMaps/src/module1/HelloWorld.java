@@ -1,3 +1,4 @@
+
 package module1;
 
 import processing.core.PApplet;
@@ -5,6 +6,7 @@ import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.providers.AbstractMapProvider;
 import de.fhpotsdam.unfolding.providers.Google;
+import de.fhpotsdam.unfolding.providers.Microsoft;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 
@@ -12,6 +14,9 @@ import de.fhpotsdam.unfolding.utils.MapUtils;
   * An application with two maps side-by-side zoomed in on different locations.
   * Author: UC San Diego Coursera Intermediate Programming team
   * @author Your name here
+  * Last Editor: Gary J
+  * Description: Modify runablity by adding main method.
+			     Modify accessablity in China by changing map providers to Microsoft
   * Date: July 17, 2015
   * */
 public class HelloWorld extends PApplet
@@ -46,7 +51,7 @@ public class HelloWorld extends PApplet
 		this.background(200, 200, 200);
 		
 		// Select a map provider
-		AbstractMapProvider provider = new Google.GoogleTerrainProvider();
+		AbstractMapProvider provider = new Microsoft.AerialProvider();
 		// Set a zoom level
 		int zoomLevel = 10;
 		
@@ -86,5 +91,7 @@ public class HelloWorld extends PApplet
 		map1.draw();
 	}
 
-	
+	public static void main(String[] args) {
+		PApplet.main("module1.HelloWorld");
+	}
 }
