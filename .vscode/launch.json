@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MyPAppletSimple",
+            "request": "launch",
+            "mainClass": "module1.MyPAppletSimple",
+            "projectName": "UCSDUnfoldingMaps"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EarthquakeCityMap",
+            "request": "launch",
+            "mainClass": "module3.EarthquakeCityMap",
+            "projectName": "UCSDUnfoldingMaps"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HelloWorld",
             "request": "launch",
             "mainClass": "module1.HelloWorld",

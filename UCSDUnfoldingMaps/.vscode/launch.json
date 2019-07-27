@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "module1.HelloWorld",
+            "projectName": "UCSDUnfoldingMaps"
+        }
+    ]
+}
